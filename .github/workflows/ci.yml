@@ -9,21 +9,22 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: julia-actions/setup-julia@v1
-        with:
-          version: '1.9'
+    # Check out the repository
+    - name: Check out code
+      uses: actions/checkout@v3
 
-      - name: Install dependencies
-        run: julia --project -e 'using Pkg; Pkg.instantiate()'
+    # Set up Julia
+    - name: Set up Julia
+      uses: julia-actions/setup-julia@v1
+      with:
+        version: '1.9'  # Specify the Julia version to use
 
-      - name: Run tests with coverage
-        run: julia --project -e 'using Pkg; Pkg.test(coverage=true)'
+    # Install dependencies
+    - name: Install dependencies
+      run: julia --project -e 'using Pkg; Pkg.instantiate()'
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          file: lcov.info
-          flags: unittests
-          fail_ci_if_error: true
+    # Run tests
+    - name: Run tests
+      run: julia --project -e 'using Pkg; Pkg.test()'
