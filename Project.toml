@@ -1,7 +1,7 @@
 name = "Determinism"
 uuid = "1c432d04-d176-4d08-9035-b8e23c05df60"
 authors = ["Ntropic <21343359+Ntropic@users.noreply.github.com>"]
-version = "0.1.0"
+version = "0.1.2"
 
 [deps]
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
