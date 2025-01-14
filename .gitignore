@@ -1,0 +1,7 @@
+# Ignore coverage files
+*.cov
+*.coverage
+*.lcov
+
+# Ignore coverage directories (adjust as needed)
+coverage/
