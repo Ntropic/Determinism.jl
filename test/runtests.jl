@@ -119,5 +119,3 @@ using Random
     end
 
 end
-# Generate lcov.info after tests
-Coverage.Codecov.submit(process_folder())

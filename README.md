@@ -1,7 +1,7 @@
 # Determinism.jl
 
-[![CI](https://github.com/ntropic/Determinism.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/ntropic/Determinism.jl/actions/workflows/ci.yml)
-[![Coverage](https://codecov.io/gh/ntropic/Determinism.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/ntropic/Determinism.jl)
+[![CI](https://github.com/Ntropic/Determinism/actions/workflows/ci.yml/badge.svg)](https://github.com/Ntropic/Determinism/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Determinism.jl** is a Julia package for ensuring reproducibility in parallel computations with pseudorandom number generators (RNGs). IT provides the macro `@determinism` to ensure that the same sequence of random numbers is generated independently of the thread or process execution order.
 
