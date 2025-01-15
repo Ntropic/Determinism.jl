@@ -49,7 +49,7 @@ function parallel_function()
         Threads.@threads for j = 1:10
             var"##rng#233" = MersenneTwister(hash((i, j)))
             a = sum(rand(var"##rng#233", j:10))
-            b = other_fun(rng)
+            b = other_fun(var"##rng#233")
         end
     end
 end
