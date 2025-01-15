@@ -5,3 +5,6 @@
 
 # Ignore coverage directories (adjust as needed)
 coverage/
+
+# Ignore prototyping folder
+prototyping/
