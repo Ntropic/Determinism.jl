@@ -3,10 +3,10 @@
 [![CI](https://github.com/Ntropic/Determinism/actions/workflows/ci.yml/badge.svg)](https://github.com/Ntropic/Determinism/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Determinism.jl** is a Julia package for ensuring reproducibility in parallel computations with pseudorandom number generators (RNGs). IT provides the macro `@determinism` to ensure that the same sequence of random numbers is generated independently of the thread or process execution order.
+**Determinism.jl** is a Julia package to help ensure reproducibility when parallel processing with pseudorandom number generators (RNGs). It provides the macro `@determinism` to ensure that the same sequence of random numbers is generated independently of thread or process execution order.
 
 ## Features
-- Create aThread/Process specific seed for reproducible random number generation.
+- Create a Thread/Process specific seed for reproducible random number generation.
 - Ensures `rand`, `randi`, `randn`, `randexp`, `randperm` and `randstring` in parallel for loops are executed with deterministic RNG logic.
 - Detects function calls with `rng` argument (or custom rng variable).
 - Recognizes parallel `for` loops created via the `@threads`, `@distributed`, `@parallel` and `@floop` macros.
