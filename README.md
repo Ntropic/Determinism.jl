@@ -26,6 +26,8 @@ A simple example in which a parallel for loop, would normally not yield reproduc
 ```julia
 using Determinism
 using Base.Threads 
+using Random
+
 @determinism function parallel_function()
     x = rand(10,10)
     y = fun(rng)
